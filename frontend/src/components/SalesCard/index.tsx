@@ -77,14 +77,14 @@ function SalesCard() {
                                     <td className="show576">{new Date(sale.date).toLocaleDateString()}</td>
                                     <td>{sale.sellerName}</td>
                                     <td className="show992">{sale.visited}</td>
-                                                                                                                                                                                                         <td className="show992">11</td>
+                                    <td className="show992">{sale.deals}</td>                                                                                                                                                                  <td className="show992">11</td>
                                     <td> R$ {sale.amout.toFixed(2)}</td>
                                     <td>
                                         <div className="dsmeta-red-btn-container">
-                                            <div className="dsmeta-red-btn">
+                                           
                                                 <NotificationButton saleId={sale.id}/>
                                             </div>
-                                        </div>
+                                        
                                     </td>
                                 </tr>
                                        )
